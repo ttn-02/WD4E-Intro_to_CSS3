@@ -12,6 +12,8 @@ header{
 nav{
   background-color: #95d5b2;
   padding: 10px;
+  display: inline-block;
+  width: 80%;
 }
 
 main{
@@ -25,10 +27,12 @@ footer{
   padding: 15px;
 }
 
+/* Nhận xét hoặc xóa style cũ của li
 li{
   display: inline-block;
   width: 30%;
 }
+*/
 
 h1{
   text-align: center;
@@ -38,4 +42,40 @@ h1{
 
 p{
   line-height: 1.6;
+}
+
+.skip-link{
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 1000;
+}
+
+.skip-link:focus{
+  top: 10px;
+}
+
+nav img{
+  width: 10%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: start;
+  row-gap: 20px;
+}
+
+.grid img{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
